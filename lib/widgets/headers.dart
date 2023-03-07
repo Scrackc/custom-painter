@@ -35,7 +35,7 @@ class HeaderDiagonal extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: double.infinity,
       width: double.infinity,
       child: CustomPaint(
@@ -77,7 +77,7 @@ class HeaderTriangle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: double.infinity,
       width: double.infinity,
       child: CustomPaint(
@@ -119,7 +119,7 @@ class HeaderPico extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: double.infinity,
       width: double.infinity,
       child: CustomPaint(
@@ -163,7 +163,7 @@ class HeaderCurve extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: double.infinity,
       width: double.infinity,
       child: CustomPaint(
@@ -207,7 +207,7 @@ class HeaderWave extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       height: double.infinity,
       width: double.infinity,
       child: CustomPaint(
@@ -219,8 +219,8 @@ class HeaderWave extends StatelessWidget {
 
 class _HeaderWavePainter extends CustomPainter {
   // Añadir gradiente
-  final Rect rect = Rect.fromCircle(center: Offset(155, 0), radius: 180);
-  final Gradient gradiente = new LinearGradient(
+  final Rect rect = Rect.fromCircle(center: const Offset(155, 0), radius: 180);
+  final Gradient gradiente = const LinearGradient(
     colors: [Colors.red, Colors.blue, Colors.green],
     begin: Alignment.topCenter,
     end: Alignment.bottomCenter,
