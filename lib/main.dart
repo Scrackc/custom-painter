@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ui_app/retos/cuadrado_animado_screen.dart';
+import 'package:ui_app/screens/graphs_circular_screen.dart';
+// import 'package:ui_app/labs/circular_progress_screen.dart';
+// import 'package:ui_app/retos/cuadrado_animado_screen.dart';
 // import 'package:ui_app/screens/animaciones_screen.dart';
 // import 'package:ui_app/screens/headers_screen.dart';
 
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.light().copyWith(
         useMaterial3: true
       ),
-      home: const CuadradoAnimadoScreen(),
+      home: const GraphsCircularScreen(),
     );
   }
 }
